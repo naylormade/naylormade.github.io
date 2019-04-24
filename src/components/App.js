@@ -1,45 +1,48 @@
-import React from 'react';
-import Interactive from 'react-interactive';
-import { Switch, Route } from 'react-router-dom';
-import Home from './Home';
-import ExampleComponent from './ExampleComponent';
-import PageNotFound from './PageNotFound';
-import Breadcrumbs from './Breadcrumbs';
-import s from '../styles/app.style';
+import React, { Component } from 'react';
+import './App.css';
+import Main from './components/main';
+import { Link } from 'react-router-dom';
 
-export default function App() {
-  return (
-    <div style={s.root}>
-      <h1 style={s.title}>Single Page Apps for GitHub Pages</h1>
-      <Interactive
-        as="a"
-        href="https://github.com/rafrex/spa-github-pages"
-        style={s.repoLink}
-        {...s.link}
-      >https://github.com/rafrex/spa-github-pages</Interactive>
+import {
+  Toolbar,
+  ToolbarRow,
+  ToolbarSection,
+  ToolbarTitle,
+  //ToolbarMenuIcon,
+  ToolbarIcon
+} from '@rmwc/toolbar';
 
-      <nav style={s.breadcrumbs}>
-        <Breadcrumbs />
-      </nav>
 
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/example" component={ExampleComponent} />
-        <Route component={PageNotFound} />
-      </Switch>
+class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
+      <Toolbar>
+          <ToolbarRow>
+            <ToolbarSection alignStart>
+              <ToolbarTitle>
+                <Link className="toolbar" to="/">Home</Link>
+              </ToolbarTitle>
+            </ToolbarSection>
+            <ToolbarSection alignEnd>
+              <ToolbarTitle>
+                <Link className="toolbar" to="/about">About Me</Link>
+              </ToolbarTitle>
+              <ToolbarTitle>
+                <Link className="toolbar" to="/resume">Resume</Link>
+              </ToolbarTitle>
+            </ToolbarSection>
+          </ToolbarRow>
+        </Toolbar>
+        
+      <Main className="root"/>
 
-      <div style={s.creditLine}>
-        <Interactive
-          as="a"
-          href="http://www.rafaelpedicini.com"
-          interactiveChild
-          focus={{}}
-          touchActive={{}}
-          touchActiveTapOnly
-        >
-          Code and concept by <span {...s.childLink}>Rafael Pedicini</span>
-        </Interactive>
-      </div>
-    </div>
-  );
+
+      
+
+      </React.Fragment>
+    )
+  }
 }
+
+export default App;

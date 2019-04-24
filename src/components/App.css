@@ -1,0 +1,86 @@
+html {
+  background: #212121;  /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);   Chrome 10-25, Safari 5.1-6 
+  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+.avatar-img {
+  height: 250px;
+  padding-top: 5em;
+  
+}
+
+.banner-text {
+  color: white;
+  opacity: 0.8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.banner-text h1 {
+  font-size: 66px;
+  font-weight: bold;
+  color: white;
+}
+
+.banner-text hr {
+  width: 50%;
+  margin: auto;
+}
+
+.banner-text p {
+  color: white;
+  font-size: 20px;
+  padding: 1em;
+}
+
+.languages {
+  margin-top: 3em;
+}
+
+.social-links {
+  font-size: 3em;
+  display: inline;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+:root {
+  --mdc-theme-primary: #24aee9;
+  --mdc-theme-secondary: #e539ff;
+  --mdc-theme-error: #b00020;
+  --mdc-theme-background: #212121;
+  --mdc-theme-surface: #37474F;
+  --mdc-theme-on-primary: rgba(255,255,255,.87);
+  --mdc-theme-on-secondary: rgba(0,0,0,0.87);
+  --mdc-theme-on-surface: rgba(255,255,255,.87);
+  --mdc-theme-on-error: #fff;
+  --mdc-theme-text-primary-on-background: rgba(255, 255, 255, 1);
+  --mdc-theme-text-secondary-on-background: rgba(255, 255, 255, 0.7);
+  --mdc-theme-text-hint-on-background: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-disabled-on-background: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-icon-on-background: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-primary-on-light: rgba(0, 0, 0, 0.87);
+  --mdc-theme-text-secondary-on-light: rgba(0, 0, 0, 0.54);
+  --mdc-theme-text-hint-on-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-disabled-on-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-icon-on-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-primary-on-dark: white;
+  --mdc-theme-text-secondary-on-dark: rgba(255, 255, 255, 0.7);
+  --mdc-theme-text-hint-on-dark: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-disabled-on-dark: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-icon-on-dark: rgba(255, 255, 255, 0.5);
+}
+
+.toolbar {
+  color: white;
+  text-decoration: none;
+}
+
+.toolbar:hover {
+  color: rgb(85, 83, 83);
+}
